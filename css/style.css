@@ -1,0 +1,809 @@
+* { margin: 0;
+padding: 0;}
+
+/* ludo board base*/
+
+
+body{ background-color: rgba(3, 3, 62, 0.958);
+
+}
+
+
+.ludo{ height: 500px;
+    width: 500px;
+    background-color: rgb(253, 174, 70);
+    margin: 112px 500px ;
+    border-radius: 15px;
+    position: relative;
+}
+
+.base{
+    height: 35px;
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+}
+
+.base2{ height: 39px;
+    width: 449px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 100px;
+    position: absolute;
+    top: 3%;
+    left: 5%;    
+    
+}
+
+.base3{ height:450px;
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     
+}
+
+
+
+.red{  height:180px;
+    width: 180px;
+    background-color: red;
+    position: absolute;
+    border-top-left-radius: 17px;
+    top: 5%;
+    left: 5%;
+}
+
+.r{ height: 122px;
+    width: 122px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.203);
+    top: 10%;
+    left: 11%;
+
+}
+
+.wr{
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: white;
+    top: 10%;
+    left: 10%;
+}
+
+.rbc{  height: 27px;
+    width: 29px;
+    background-color:rgba(0, 0, 0, 0.203);
+    border-radius: 100px;
+    position: absolute;
+    top: 14%;
+    left: 15%;
+
+}
+
+
+
+.rcircle{
+    height: 32px;
+    width: 32px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    top: 13%;
+    left: 14%;
+}
+
+.rrb{
+    top: 14%;
+    left: 25%
+}
+
+.rr{
+    top: 13%;
+    left: 24%;
+}
+
+
+.rbb{ top: 23%;
+    left: 25%;
+
+}
+
+.rb{ top: 22%;
+    left: 24%;
+}
+
+.rlb{ top: 23%;
+    left: 15%;
+
+}
+
+.rl{ top: 22%;
+    left: 14%;
+
+}
+
+.rline{
+        height: 30px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    top: 47%;
+    left: 11%;
+}
+
+.rs{
+    height: 30px;
+    width: 30px;
+    top: 41%;
+    left: 11%;
+}
+
+.brline{ height:1px;
+    width: 450px;
+    background-color: black;
+    position: absolute;
+    top: 41%;
+    left: 5%;
+}
+
+.blrm{ height: 2px;  
+    width: 180px;
+    top: 47%;
+}
+
+.blrm2{
+     width: 180px;
+    top: 53%;
+}
+
+.blrd{
+     height:2px;
+    width: 450px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 59%;
+}
+
+.brsl{
+    height: 91px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 41%;
+    left: 5%;
+}
+
+.onr{
+    left: 11%;
+}
+
+.ond{ left: 23%;}
+
+.oner{  height: 91px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 41%;
+    right: 71%;}
+
+.oned{ left: 35%}
+
+.brsll{ height: 91px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 41%;
+    right: 83%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.green{ height:180px;
+    width: 180px;
+    background-color: rgb(12, 182, 9);
+    position: absolute;
+    border-top-right-radius: 17px;
+    top: 5%;
+    right: 5%;
+}
+
+.g{
+    height: 122px;
+    width: 122px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.203);
+    top: 10%;
+    left: 66%;
+}
+
+.wg{height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: white;
+    top: 10%;
+    right: 11%;}
+
+.gbc{ height: 27px;
+    width: 29px;
+    background-color:rgba(0, 0, 0, 0.203);
+    border-radius: 100px;
+    position: absolute;
+    top: 14%;
+    left: 80%;
+}
+
+.gcircle{  height: 32px;
+    width: 32px;
+    background-color: rgb(12, 182, 9);
+    border-radius: 100px;
+    position: absolute;
+    top: 13%;
+    right: 15%;
+}
+
+.grb{ top: 23%;
+    left: 80%;
+
+}
+
+.gr{ top: 22%;
+    left: 79%;
+}
+
+.gbb{ top: 23%;
+    left: 70%;
+}
+
+.gb{ top: 22%;
+    left: 69%;
+}
+
+.glb{ top: 14%;
+     left: 70%; }
+
+.gl{ top: 13%;
+    left: 69%;
+}
+
+.gline{
+    height: 150px;
+    width: 30px;
+    background-color:rgb(12, 182, 9);
+    position: absolute;
+    top: 11%;
+    left: 47%;
+}
+.gs{
+    height: 30px;
+    width: 30px;
+    top: 11%;
+    left: 53%;
+
+} 
+
+.bgline{ height:450px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 41%;
+
+}
+
+.blgm{ height: 180px;
+    width: 2px;
+    left: 47%;
+}
+
+.blgm2{
+    height: 180px;
+    left: 53%;
+}
+
+.blgd{ height:450px;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 59%;
+
+
+}
+
+.bgsl{ height: 1px;
+    width: 91px;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 41%;
+}
+
+.non{
+    top: 11%;
+}
+
+.nor{ top: 23%;
+
+}
+
+.nog{ top: 35%; }
+
+.bgsll{ height: 1px;
+    width: 91px;
+    background-color: black;
+    position: absolute;
+    bottom: 83%;
+    left: 41%;
+
+}
+
+.ongg{  height: 1px;
+    width: 91px;
+    background-color: black;
+    position: absolute;
+    bottom: 71%;
+    left: 41%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.yellow{ height:180px;
+    width: 180px;
+    background-color: yellow;
+    position: absolute;
+    border-bottom-right-radius: 17px;
+    bottom: 5%;
+    right: 5%;
+}
+
+.y{height: 122px;
+    width: 122px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.203);
+    bottom: 9%;
+    left: 66%;}
+
+.wy{
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: white;
+    bottom: 10%;
+    right: 11%;
+}
+
+.ybc{ height: 27px;
+    width: 29px;
+    background-color:rgba(0, 0, 0, 0.203);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 80%
+     
+}
+
+.ycircle{  height: 32px;
+    width: 32px;
+    background-color: yellow;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 79%;
+}
+
+.yrb{ bottom: 23%;
+    left: 80%;
+
+
+}
+
+.yr{ bottom: 23%;
+    left: 79%;
+}
+
+.ybb{ bottom: 14%;
+    left: 70%;
+
+}
+
+.yb{ bottom: 14%;
+    left: 69%;
+}
+
+.ylb{ bottom: 23%;
+    left: 70%;
+
+}
+
+.yl{ bottom: 23%;
+    left: 69%;
+
+}
+
+.yline{  height: 30px;
+    width: 150px;
+    background-color: yellow;
+    position: absolute;
+    top: 47%;
+    right: 11%;
+    
+}
+
+.ys{
+    height: 30px;
+    width: 30px;
+    top: 53%;
+    right: 11%;
+}
+
+.byline{ width:180px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 5%;
+    top: 53%;
+
+}
+
+.blym{ height: 2px;
+    top: 47%;
+}
+
+.bysl{ height:91px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 41%;
+    right: 5%;
+
+}
+
+.yelo{ right: 11%;
+
+}
+
+.yell{ right: 17%;
+
+}
+.ylo{ right: 23%;
+
+}
+
+.bysll{  height:91px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    top: 41%; 
+   right: 29% ;}
+
+.llo{ right: 35%;}
+
+
+
+
+
+
+
+.blue{ height:180px;
+    width: 180px;
+    background-color: rgb(6, 151, 241);
+    position: absolute;
+    border-bottom-left-radius: 17px;
+    bottom: 5%;
+    left: 5%;
+}
+
+.b{
+    height: 122px;
+    width: 122px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.203);
+    bottom: 9%;
+    left: 11%;
+}
+
+.wb{
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+    background-color: white;
+    bottom: 10%;
+    left: 10%;
+}
+
+.bbc{  height: 27px;
+    width: 29px;
+    background-color:rgba(0, 0, 0, 0.203);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 15%
+
+}
+
+.bcircle{ height: 32px;
+    width: 32px;
+    background-color: rgb(6, 151, 241) ;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 14%;
+    left: 14%;
+}
+
+.brb{
+    bottom: 23%;
+    left: 15%;
+}
+
+.br{
+    bottom: 23%;
+    left: 14%;
+}
+
+.bbb{ bottom: 23%;
+    left: 24%;
+
+}
+
+.bb { bottom: 23%;
+    left: 23%;
+
+}
+
+.blb{ bottom: 14%;
+    left: 24%;
+
+}
+
+.bl{ bottom: 14%;
+    left: 23%;
+
+}
+
+.bline{ height: 150px;
+    width: 30px;
+    background-color: rgb(6, 151, 241) ;
+    position: absolute;
+    bottom: 11%;
+    left: 47%;
+
+}
+
+.bs{
+    height: 30px;
+    bottom: 11%;
+    left: 41%;
+}
+
+.bbline{ height: 180px;
+    width: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 5%;
+    left: 53%;
+
+}
+
+.blbm{width: 2px;
+     left: 47%;
+}
+
+.bbsl{ width:91px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 5%;
+    right: 41%;
+
+}
+
+.blu{ bottom: 11%;}
+
+.bon{ bottom: 23%;}
+
+.bonbon{bottom: 35%; }
+
+.boo{ bottom: 17%; }
+
+.bue{ bottom: 29%;}
+
+
+
+
+
+.boxblack{ height: 91px;
+    width: 91px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.trir{ height: 91px;
+    width: 75px;
+    background-color: red;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    clip-path: polygon(65% 50%, 0 0, 0 100%);
+}
+
+.trig{
+    height: 104px;
+    width: 91px;
+    background-color: rgb(12, 182, 9);
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    clip-path: polygon(100% 0, 0 0, 50% 47%);
+}
+
+.triy{height: 91px;
+    width: 58px;
+    background-color: yellow;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    clip-path: polygon(100% 0, 23% 50%, 100% 100%);
+
+}
+
+.trib{  height: 84px;
+    width: 90px;
+    background-color: rgb(6, 151, 241);
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    clip-path: polygon(50% 49%, 0 100%, 100% 100%);
+
+}
+
+
+.star{ height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 54%;
+    left: 12%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.rws{ height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    top: 42%;
+    left: 12%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.yws{ height: 20px;
+    width: 20px;
+    background-color: rgb(252, 250, 250);
+    position: absolute;
+    top: 54%;
+    right: 12%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.ybs{ height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 42%;
+    right: 12%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.bbs{
+     height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 84%;
+    left: 54%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.bws{ height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    top: 84%;
+    left: 42%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.gbs{ height: 20px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 12%;
+    left: 42%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.gws{ height: 20px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    top: 12%;
+    left: 54%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+}
+
+.arrow{ height: 13px;
+    width: 18px;
+    background-color: black;
+    position: absolute;
+    bottom: 7%;
+    right: 48%;
+    clip-path: polygon(10% 25%, 35% 25%, 11% 25%, 52% 0, 90% 25%, 90% 25%, 90% 41%, 57% 26%, 65% 100%, 35% 100%, 44% 26%, 15% 47%);
+}
+
+.arrr{ height: 13px;
+    width: 18px;
+    background-color: black;
+    position: absolute;
+    top: 49%;
+    left: 7%;
+    transform: rotate(90deg);
+    clip-path: polygon(10% 25%, 35% 25%, 11% 25%, 52% 0, 90% 25%, 90% 25%, 90% 41%, 57% 26%, 65% 100%, 35% 100%, 44% 26%, 15% 47%);
+}
+
+.arrg{ height: 13px;
+    width: 18px;
+    background-color: black;
+    position: absolute;
+    top: 7%;
+    right: 48%;
+    transform: rotate(179deg);
+    clip-path: polygon(10% 25%, 35% 25%, 11% 25%, 52% 0, 90% 25%, 90% 25%, 90% 41%, 57% 26%, 65% 100%, 35% 100%, 44% 26%, 15% 47%);
+}
+
+.arry{ height: 13px;
+    width: 18px;
+    background-color: black;
+    position: absolute;
+    top: 49%;
+    right: 7%;
+    transform: rotate(267deg);
+    clip-path: polygon(10% 25%, 35% 25%, 11% 25%, 52% 0, 90% 25%, 90% 25%, 90% 41%, 57% 26%, 65% 100%, 35% 100%, 44% 26%, 15% 47%);
+}
+
